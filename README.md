@@ -48,15 +48,23 @@ Se evaluaron varios modelos de regresión:
 
 ---
 
+## 📌 Variables Consideradas
+- Temporales: Año, mes, día, semana, feriado, rango horario, etc.
+- Geográficas: Oficina, región.
+- Atención: Tipo de atención, canal, promedios históricos.
+
+---
 ## 📁 Estructura del Repositorio
 
 ├── data/
 │ └── llamadas_telepresencia.csv # Dataset base (anonimizado o de ejemplo)
 ├── notebooks/
-│ └── modelado_LightGBM.ipynb # Notebook principal
+│ ├── modelado_LightGBM.ipynb # Notebook principal
 │ └── analisis_exploratorio.ipynb # Análisis exploratorio y EDA
 ├── resultados/
 │ └── metricas_modelos.csv # Comparación de modelos
 ├── utils/
-│ └── funciones_preprocesamiento.py
+│ └── funciones_preprocesamiento.py # Funciones auxiliares
 ├── README.md
+
+
