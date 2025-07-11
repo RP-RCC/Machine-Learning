@@ -1,4 +1,4 @@
-# 📊 Predicción de Llamadas Entrantes de Cabinas de Telepresencia con Machine Learning
+# 📊 APLICACIÓN DE APRENDIZAJE AUTOMÁTICO PARA EL PRONÓSTICO DE LLAMADAS ENTRANTES DESDE CABINAS DE TELEPRESENCIA 
 
 Este repositorio contiene el desarrollo de un modelo predictivo para anticipar el volumen de llamadas entrantes desde **cabinas de telepresencia** en centros de atención al cliente de una empresa de telecomunicaciones en Perú. Se utilizaron técnicas de aprendizaje automático supervisado aplicadas a datos correspondientes del periodo **abril 2024 - abril 2025**.
 
