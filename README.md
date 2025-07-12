@@ -23,14 +23,14 @@ Se evaluaron varios modelos de regresión:
 
 ---
 
-## 📈 Principales Resultados
+## 📈 Principales Resultados (Test)
 
-| Modelo       | R² Score | RMSE   | MAE    |
-|--------------|----------|--------|--------|
-| LightGBM     | 0.9985   | 0.1250 | 0.0283 |
-| XGBoost      | 0.7111   | 2.0783 | 1.4451 |
-| GBR          | 0.7132   | 2.0708 | 1.4409 |
-| Random Forest| 0.9960   | 0.2059 | 0.0264 |
+| Modelo        | R² Score | RMSE   | MAE    | MAPE (%) |
+|---------------|----------|--------|--------|----------|
+| LightGBM      | 0.9985   | 0.1250 | 0.0283 | 0.5345   |
+| XGBoost       | 0.7111   | 2.0783 | 1.4451 | 51.0218  |
+| GBR           | 0.7132   | 2.0708 | 1.4409 | 50.7703  |
+| Random Forest | 0.9960   | 0.2059 | 0.0264 | 0.5388   |
 
 > El modelo LightGBM fue el más preciso, permitiendo predicciones confiables por rango horario.
 
