@@ -22,6 +22,14 @@ Se evaluaron varios modelos de regresión:
 > Se aplicó la metodología **CRISP-DM** para un proceso estructurado y reproducible.
 ---
 
+
+## 📌 Variables Consideradas
+- Temporales: Año, mes, día, semana, feriado, fin de semana, rango horario, día laboral, estación, semana2, semana3.
+- Geográficas: Oficina, región,canal.
+- Atención: Tipo de atención, promedios históricos.
+
+---
+
 ## 🔢 Protocolo de experimentación
 
 Se evaluaron 4 modelos bajo un protocolo de experimentación.
@@ -107,12 +115,7 @@ Se evaluaron 4 modelos bajo un protocolo de experimentación.
 - Seaborn / Matplotlib
 
 
----
 
-## 📌 Variables Consideradas
-- Temporales: Año, mes, día, semana, feriado, fin de semana, rango horario, día laboral, estación, semana2, semana3.
-- Geográficas: Oficina, región,canal.
-- Atención: Tipo de atención, promedios históricos.
 
 ---
 ## 📌 Conclusiones
