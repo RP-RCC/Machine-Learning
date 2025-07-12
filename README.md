@@ -22,7 +22,7 @@ Se evaluaron varios modelos de regresión:
 > Se aplicó la metodología **CRISP-DM** para un proceso estructurado y reproducible.
 ---
 
-## 🧠 Protocolo de experimentación
+## 🔢 Protocolo de experimentación
 
 Se evaluaron 4 modelos bajo un protocolo de experimentación.
 
@@ -73,9 +73,7 @@ Se evaluaron 4 modelos bajo un protocolo de experimentación.
 | Tipo de boosting                  | gbdt                          | 1               |
 | **Total de experimentaciones**     |                               | **108**         |
 
-
-
-### 🔢 **Total general de experimentaciones: 496**
+> **Total general de experimentaciones: 496**
 ---
 
 ## 📈 Principales Resultados (Test)
@@ -87,7 +85,15 @@ Se evaluaron 4 modelos bajo un protocolo de experimentación.
 | GBR           | 0.7132   | 2.0708 | 1.4409 | 50.7703  |
 | Random Forest | 0.9960   | 0.2059 | 0.0264 | 0.5388   |
 
-> El modelo LightGBM fue el más preciso, permitiendo predicciones confiables por rango horario.
+ El modelo LightGBM fue el más preciso, permitiendo predicciones confiables por rango horario. Los hiperparámetros del modelo de LGBM fueron:
+- n_estimators: 500
+- num_leaves:	50
+- learning_rate:	0.1
+- max_depth:	-1
+- min_child_samples:	20
+- objective:	regression
+- boosting_type:	gbdt
+
 
 ---
 
@@ -108,5 +114,27 @@ Se evaluaron 4 modelos bajo un protocolo de experimentación.
 - Geográficas: Oficina, región,canal.
 - Atención: Tipo de atención, promedios históricos.
 
+---
+## 📌 Conclusiones
 
+Los modelos de aprendizaje automático lograron predecir el número de llamadas entrantes desde cabinas de telepresencia ubicadas en centros de atención al cliente de una empresa de telecomunicaciones basado en las llamadas del 2024 y 2025.
+
+La exploración y preparación del conjunto de datos históricos de llamadas entrantes del 2024 y 2025 contribuyeron a la predicción del número de llamadas entrantes desde cabinas de telepresencia ya que proporcionan datos procesados y listos para usar en modelos de machine learning. 
+
+La aplicación de los modelos Random Forest, XGBoost, GBR y LGBM contribuyeron a la predicción del número de llamadas entrantes desde cabinas de telepresencia ya que brindan diferentes predicciones para una posterior comparación.
+
+El modelo LightGBM tuvo los mejores resultados R^2  y RMSE en la predicción del número de llamadas entrantes desde cabinas de telepresencia.
+
+---
+## 📌 Recomendaciones
+
+Adicionar más variables derivadas (engineered features) y evaluar si mejora el resultado de los indicadores ya que, aunque el modelo ha demostrado una capacidad predictiva sobresaliente, es recomendable continuar explorando y creando variables derivadas que puedan capturar patrones más profundos en los datos.
+
+Adicionar variables externas y evaluar el impacto que tendrían en el desempeño del modelo debido a que actualmente, el modelo se basa en variables internas del sistema (día, canal, tipo de atención, etc.), pero se sugiere incluir variables externas que puedan afectar la demanda de llamadas y que no están contenidas en el sistema, como condiciones climáticas, eventos relevantes, cortes de servicio previos o mantenimiento, etc.
+
+Evaluar modelos adicionales encontrados en el estado del arte como GRU y SARIMA pues si bien los modelos basados en árboles (LightGBM, XGBoost, Random Forest) han ofrecido excelentes resultados, es importante contrastarlos con enfoques alternativos, especialmente aquellos orientados a series temporales.
+
+Ampliar el periodo de recolección de datos dado que el dataset cubre un año (abril 2024 - abril 2025), se recomienda extender la cobertura a múltiples años para identificar patrones multianuales, efectos post-pandemia o cambios por estacionalidades específicas.
+
+Una vez implementado, el modelo debe ser monitoreado mensualmente. Si la demanda cambia, el modelo debe reentrenarse.
 
