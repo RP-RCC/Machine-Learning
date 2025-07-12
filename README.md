@@ -44,14 +44,14 @@ Se evaluaron varios modelos de regresión:
 - XGBoost
 - Pandas / NumPy
 - Seaborn / Matplotlib
-- BorutaPy (para selección de variables)
+
 
 ---
 
 ## 📌 Variables Consideradas
-- Temporales: Año, mes, día, semana, feriado, rango horario, etc.
-- Geográficas: Oficina, región.
-- Atención: Tipo de atención, canal, promedios históricos.
+- Temporales: Año, mes, día, semana, feriado, fin de semana, rango horario, día laboral, estación, semana2, semana3.
+- Geográficas: Oficina, región,canal.
+- Atención: Tipo de atención, promedios históricos.
 
 
 
