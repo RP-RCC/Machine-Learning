@@ -73,7 +73,7 @@ Se evaluaron 4 modelos bajo un protocolo de experimentación.
 | Tipo de boosting                  | gbdt                          | 1               |
 | **Total de experimentaciones**     |                               | **108**         |
 
----
+
 
 ### 🔢 **Total general de experimentaciones: 496**
 ---
